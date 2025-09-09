@@ -60,7 +60,8 @@ function Layout() {
                 <Link to="/keeping-components-pure">Ex8</Link> |{" "}
                 <Link to="/understanding-your-ui-as-a-tree">Ex9</Link> |{" "}
                 <Link to="/Adding Interactivity">Ex10</Link> |{" "}
-                <Link to = "/Adding event handlers ">Ex11</Link>
+                <Link to = "/Adding event handlers ">Ex11</Link>|{" "}
+                <Link to= "/State: A Component's Memory">Ex12</Link>|{" "}
             </nav>
 
             <main style={{ padding: "30px" }}>
