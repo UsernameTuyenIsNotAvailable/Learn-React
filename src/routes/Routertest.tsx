@@ -14,8 +14,9 @@ import  Ex9  from "../components/Ex9";
 import Ex10  from "../components/Ex10";
 import Ex11  from "../components/Ex11";
 import Ex12  from "../components/Ex12";
-
-
+import Ex13  from "../components/Ex13";
+import Ex14 from "../components/Ex14";
+import Ex15 from "../components/Ex15";
 export default function Routertest() {
     return (
         <BrowserRouter>
@@ -37,14 +38,18 @@ export default function Routertest() {
                     <Route path="/Adding Interactivity" element= {<Ex10/>} />
                     <Route path="Adding event handlers" element={<Ex11/>}/>
                     <Route path="State: A Component's Memory"  element={<Ex12/>}/>
+                    <Route path="Render and Commit" element={<Ex13/>}/>
+                    <Route path="State as a Snapshot" element={<Ex14/>}/>
+                    <Route path="Queueing a Series of State Updates" element={<Ex15/>}></Route>
+
                 </Route>
             </Routes>
         </BrowserRouter>
-    );
+    );}
 
 
 
-function Layout() {
+export function Layout() {
     return (
         <>
             <nav style={{ padding: "10px", background: "#eee" }}>
@@ -60,8 +65,17 @@ function Layout() {
                 <Link to="/keeping-components-pure">Ex8</Link> |{" "}
                 <Link to="/understanding-your-ui-as-a-tree">Ex9</Link> |{" "}
                 <Link to="/Adding Interactivity">Ex10</Link> |{" "}
-                <Link to = "/Adding event handlers ">Ex11</Link>|{" "}
-                <Link to= "/State: A Component's Memory">Ex12</Link>|{" "}
+                <Link to="/Adding event handlers">Ex11</Link> |{" "}
+                <Link to="/State: A Component's Memory">Ex12</Link> |{" "}
+                <Link to="/Render and Commit">Ex13</Link> |{" "}
+                <Link to="/State as a Snapshot">Ex14</Link> |{" "}
+                <Link
+                    to="/Queueing a Series of State Updates"
+                    style={{ color: "red" }}
+                >
+                    Ex15
+                </Link>{" "}
+                |
             </nav>
 
             <main style={{ padding: "30px" }}>
@@ -69,4 +83,4 @@ function Layout() {
             </main>
         </>
     );
-}}
+}
